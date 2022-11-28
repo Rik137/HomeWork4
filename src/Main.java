@@ -20,8 +20,8 @@ class Main {
         }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int earnings = 0;    // доходы
-        int spendings = 0;   // расходы
+        int earnings = 0;    
+        int spendings = 0;   
 
         while (true) {
             System.out.println("Выберите операцию и введите её номер:");
@@ -51,7 +51,7 @@ class Main {
                 switch (operation) {
                     case 1:
                         System.out.println("Введите сумму дохода:");
-                        String moneyStr = scanner.nextLine(); // Не используйте тут nextInt (!)
+                        String moneyStr = scanner.nextLine();
                         int money = Integer.parseInt(moneyStr);
                         earnings += money;
                         System.out.println("ваш доход " + earnings);
@@ -82,7 +82,6 @@ class Main {
                     default:
                         System.out.println("нет такой команды");
                 }
-
             }
         }
     }
